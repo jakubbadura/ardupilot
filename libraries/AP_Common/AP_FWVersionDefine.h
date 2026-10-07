@@ -65,11 +65,6 @@ const AP_FWVersion AP_FWVersion::fwver{
     .fw_string = ACTIVE_FWSTR " (" GIT_VERSION ")",
     .fw_hash_str = GIT_VERSION,
 #endif
-#ifndef GIT_VERSION_INT
-    .fw_hash = 0,
-#else
-    .fw_hash = GIT_VERSION_INT,
-#endif
     .fw_string_original = ORIGINAL_FWSTR,
     .fw_short_string = ACTIVE_FWSTR,
     .middleware_name = nullptr,
@@ -80,5 +75,10 @@ const AP_FWVersion AP_FWVersion::fwver{
 #else
     .os_name = nullptr,
     .os_hash_str = nullptr,
+#endif
+#ifndef GIT_VERSION_INT
+    .fw_hash = 0,
+#else
+    .fw_hash = GIT_VERSION_INT,
 #endif
 };

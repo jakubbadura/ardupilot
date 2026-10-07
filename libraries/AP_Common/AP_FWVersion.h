@@ -29,13 +29,13 @@ public:
     const uint32_t os_sw_version;
     const char *fw_string;
     const char *fw_hash_str;
-    const uint32_t fw_hash;
     const char *fw_string_original;
     const char *fw_short_string;
     const char *middleware_name;
     const char *middleware_hash_str;
     const char *os_name;
     const char *os_hash_str;
+    const uint32_t fw_hash;
 
     static const AP_FWVersion &get_fwverz() { return fwver; }
 
