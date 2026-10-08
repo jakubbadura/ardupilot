@@ -1,0 +1,64 @@
+# ArduPlane SITL default parameters for Platypus 25 Jet UAV
+# 200N Jet Turbine, Blended Delta Wing, 18kg TOW, 80 m/s max airspeed
+
+# Actuator Functions: Elevons + Throttle + Rudder
+SERVO1_FUNCTION 77
+SERVO2_FUNCTION 78
+SERVO3_FUNCTION 70
+SERVO4_FUNCTION 21
+SERVO1_REVERSED 1
+SERVO2_REVERSED 1
+SERVO4_REVERSED 0
+
+# IMU Calibration offsets for instant SITL arming
+INS_ACCOFFS_X   0.001
+INS_ACCOFFS_Y   0.001
+INS_ACCOFFS_Z   0.001
+INS_ACCSCAL_X   1.001
+INS_ACCSCAL_Y   1.001
+INS_ACCSCAL_Z   1.001
+INS_ACC2OFFS_X  0.001
+INS_ACC2OFFS_Y  0.001
+INS_ACC2OFFS_Z  0.001
+INS_ACC2SCAL_X  1.001
+INS_ACC2SCAL_Y  1.001
+INS_ACC2SCAL_Z  1.001
+INS_GYR_CAL     0
+BATT_MONITOR    4
+
+# Airspeed Limits (from Platypus 25 flight envelope)
+ARSPD_TYPE      0
+ARSPD_FBW_MIN   22.0
+AIRSPEED_CRUISE 45.0
+AIRSPEED_MAX    80.0
+
+# 200N Turbine Takeoff Configuration
+TKOFF_GND_PITCH  8.0
+TKOFF_ROTATE_SPD 26.0
+TKOFF_LVL_ALT    30.0
+TKOFF_PLIM_SEC   2.0
+TKOFF_THR_MAX    100
+TKOFF_THR_MIN    100
+THR_MAX          100
+THR_MIN          0
+TRIM_THROTTLE    45
+
+# Tuned Roll & Pitch Rates (derived from Platypus 25-5.params)
+RLL2SRV_P        0.10
+RLL2SRV_I        0.12
+RLL2SRV_D        0.00
+RLL2SRV_FF       0.15
+RLL2SRV_RMAX     60.0
+
+PTCH2SRV_P       0.08
+PTCH2SRV_I       0.12
+PTCH2SRV_D       0.00
+PTCH2SRV_FF      0.30
+PTCH2SRV_RMAX    40.0
+
+# Total Energy Control System (TECS) for High-Speed Jet UAV
+TECS_CLMB_MAX    15.0
+TECS_SINK_MAX    10.0
+TECS_PITCH_MAX   25.0
+TECS_PITCH_MIN   -20.0
+TECS_TIME_CONST  4.0
