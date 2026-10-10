@@ -14,9 +14,9 @@ SERVO3_MIN 1100
 SERVO3_MAX 1900
 SERVO3_TRIM 1100
 
-# Arming and Safety Bypass for SITL
+# Arming configuration (starts disarmed, requires manual arming)
 ARMING_CHECK 0
-ARMING_REQUIRE 0
+ARMING_REQUIRE 1
 BRD_SAFETYENABLE 0
 
 # IMU Calibration offsets for instant SITL arming
