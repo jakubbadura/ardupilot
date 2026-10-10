@@ -35,15 +35,15 @@ INS_ACC2SCAL_Z  1.001
 INS_GYR_CAL     0
 BATT_MONITOR    4
 
-# Airspeed Limits (from Platypus 25 flight envelope)
+# Airspeed Limits (calibrated from real PX4 flight logs)
 ARSPD_TYPE      0
-ARSPD_FBW_MIN   22.0
+ARSPD_FBW_MIN   32.0
 AIRSPEED_CRUISE 45.0
-AIRSPEED_MAX    80.0
+AIRSPEED_MAX    95.0
 
 # 200N Turbine Takeoff Configuration
 TKOFF_GND_PITCH  10.0
-TKOFF_ROTATE_SPD 16.0
+TKOFF_ROTATE_SPD 18.0
 TKOFF_LVL_ALT    30.0
 TKOFF_PLIM_SEC   1.0
 TKOFF_THR_MAX    100
@@ -55,21 +55,21 @@ MIXING_GAIN      1.0
 SCALING_SPEED    45.0
 GROUND_STEER_ALT 2.0
 
-# Tuned Roll & Pitch Rates (derived from Platypus 25-5.params)
+# Calibrated Roll & Pitch Rates (matching real PX4 FW_R_RMAX 70 & FW_P_RMAX 60)
 RLL2SRV_P        0.12
 RLL2SRV_I        0.15
 RLL2SRV_D        0.00
 RLL2SRV_FF       0.20
-RLL2SRV_RMAX     60.0
-RLL_LIM_DEG_MAX  60.0
+RLL2SRV_RMAX     70.0
+RLL_LIM_DEG_MAX  50.0
 
 PTCH2SRV_P       0.15
 PTCH2SRV_I       0.20
 PTCH2SRV_D       0.00
 PTCH2SRV_FF      0.40
 PTCH2SRV_RMAX    60.0
-PTCH_LIM_MAX_DEG 35.0
-PTCH_LIM_MIN_DEG -20.0
+PTCH_LIM_MAX_DEG 30.0
+PTCH_LIM_MIN_DEG -30.0
 
 # Total Energy Control System (TECS) for High-Speed Jet UAV
 TECS_CLMB_MAX    15.0
