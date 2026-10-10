@@ -74,6 +74,11 @@ PTCH_LIM_MIN_DEG -30.0
 PTCH_TRIM_DEG    0.0
 KFF_THR2PTCH     0.0
 
+# Yaw Damper (suppresses Dutch roll and rudder ringing)
+YAW2SRV_DAMP     0.6
+YAW2SRV_RLL      1.0
+KFF_RDDRMIX      0.05
+
 # Total Energy Control System (TECS) for High-Speed Jet UAV
 TECS_CLMB_MAX    15.0
 TECS_SINK_MAX    10.0
