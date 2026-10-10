@@ -52,16 +52,17 @@ THR_MAX          100
 THR_MIN          0
 TRIM_THROTTLE    45
 MIXING_GAIN      1.0
+MIXING_OFFSET    -40
 SCALING_SPEED    45.0
 GROUND_STEER_ALT 2.0
 
-# Calibrated Roll & Pitch Rates (matching real PX4 FW_R_RMAX 70 & FW_P_RMAX 60)
-RLL2SRV_P        0.12
-RLL2SRV_I        0.15
+# Calibrated Roll Rates (softened roll response, pitch kept ideal)
+RLL2SRV_P        0.06
+RLL2SRV_I        0.10
 RLL2SRV_D        0.00
-RLL2SRV_FF       0.20
-RLL2SRV_RMAX     70.0
-RLL_LIM_DEG_MAX  50.0
+RLL2SRV_FF       0.10
+RLL2SRV_RMAX     50.0
+RLL_LIM_DEG_MAX  45.0
 
 PTCH2SRV_P       0.15
 PTCH2SRV_I       0.20
